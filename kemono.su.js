@@ -8,8 +8,8 @@
 // @match       https://kemono.party/*/user/*/post/*
 // @grant       none
 // @run-at      document-end
-// @updateURL   https://gist.githubusercontent.com/kzxjskdn/f46f81615957db3777d7dc7d22723939/raw/kemono.su.user.js
-// @downloadURL https://gist.githubusercontent.com/kzxjskdn/f46f81615957db3777d7dc7d22723939/raw/kemono.su.user.js
+// @updateURL   https://raw.githubusercontent.com/kzxjskdn/js/refs/heads/main/kemono.su.js
+// @downloadURL https://raw.githubusercontent.com/kzxjskdn/js/refs/heads/main/kemono.su.js
 // ==/UserScript==
 (function() {
     'use strict';
