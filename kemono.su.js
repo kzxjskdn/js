@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name        kemono.su 完整图片自动加载 (战神终版)
 // @namespace   kemono_auto_fullsize
-// @version     1.3.6
-// @description 优化加载速度，经过实测加载速度提升300%，修复浏览器识别问题
+// @version     1.3.7
+// @description 优化加载速度，经过实测加载速度提升至最大，修复浏览器识别问题
 // @author      小元
 // @match       https://kemono.su/*/user/*/post/*
 // @match       https://kemono.party/*/user/*/post/*
@@ -58,7 +58,7 @@
             if (activated) return;
             activated = true;
             scanImages();
-            setInterval(scanImages, 100);
+            setInterval(scanImages, 50);
             new MutationObserver(scanImages).observe(document.body, {childList: true, subtree: true});
             window.addEventListener('scroll', () => setTimeout(scanImages, 300));
         };
@@ -66,7 +66,7 @@
         if (document.readyState === 'complete') activate();
         else window.addEventListener('load', activate);
         document.addEventListener('DOMContentLoaded', activate);
-        setTimeout(activate, 20);
+        setTimeout(activate, 10);
     }
 
     init();
